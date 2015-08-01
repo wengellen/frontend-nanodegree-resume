@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/wengellen/frontend-nanodegree-resume/issues"
   },
+  "engines": {
+    "node": "0.12.2"
+  },
   "dependencies": {
     "grunt-responsive-images": "^0.1.6",
     "express": "^4.11.2",
