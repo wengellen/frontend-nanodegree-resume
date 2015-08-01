@@ -9,8 +9,8 @@ app.set('view engine', 'html');
 
 require('./routes')(app);
 
-app.listen(3000, function(){
+/*app.listen(3000, function(){
     console.log('listening to 3000');
-})
+})*/
 
 
