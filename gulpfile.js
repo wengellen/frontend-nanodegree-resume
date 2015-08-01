@@ -84,10 +84,10 @@ gulp.task('nodemon', function (cb) {
     var called = false;
     return nodemon(
         {
-            script: 'server.js',
+            script: 'index.js',
             ignore: ['ng*', 'gulp*', 'assets*'],
             ext: 'js html ejs',
-            watch: ['server.js', 'views/**/*.*', 'controllers/**/*.js']
+            watch: ['index.js', 'views/**/*.*', 'controllers/**/*.js']
         }
     ).on('start', function () {
             if (!called) {
@@ -111,4 +111,8 @@ gulp.task('dev', ['css:watch',  'dev:server'], function(){
     gulp.watch('templates/**/*.*', reload)
 })
 
+gulp.task('heroku:production', function(){
+    //runSeq('clean', 'build', 'minify')
+    runSeq(build)
+})
 

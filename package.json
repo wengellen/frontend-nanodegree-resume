@@ -4,7 +4,9 @@
   "description": "1. Go to the [Javascript Basics course](https://www.udacity.com/course/ud804) and select \"View Course Materials.\" 2. Go through the videos and assignments in this course to learn the JavaScript necessary to build your resume. 3. Review your work against the Project Rubric (on the next page). 4. When you are satisfied with your project, submit it according to the Submission Instructions on the next page.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,9 @@
     "gulp-autoprefixer": "^2.3.1",
     "gulp-ruby-sass": "^1.0.5",
     "gulp-svgmin": "^1.2.0"
+  },
+  "engines": {
+    "node": "v0.12.2"
   },
   "homepage": "https://github.com/wengellen/frontend-nanodegree-resume"
 }

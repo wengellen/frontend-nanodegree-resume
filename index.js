@@ -9,8 +9,13 @@ app.set('view engine', 'html');
 
 require('./routes')(app);
 
-/*app.listen(3000, function(){
-    console.log('listening to 3000');
-})*/
 
 
+var port = process.env.PORT || 3000;
+
+app.listen(port, function () {
+    console.log('Server', process.pid, 'listening on', port)
+})
+
+
+//module.exports = app;
